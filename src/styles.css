@@ -1,0 +1,57 @@
+.App {
+  font-family: sans-serif;
+}
+.product_layout {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: calc(100vh - 100px);
+  overflow-y: scroll;
+}
+.item-card {
+  background: gainsboro;
+  flex: 1fr;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+}
+.next-page {
+  transform: rotate(180deg);
+}
+.pagination {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin: 40px;
+}
+.pagination span,
+.pagination svg {
+  display: inline-block;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.pagination span:hover,
+.pagination svg:hover,
+.active {
+  background-color: lavender;
+}
+
+.a-pagination {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.a-pagination p {
+  cursor: pointer;
+  padding: 10px;
+  border: 1px solid;
+}
+.a-pagination p.active {
+  background-color: lavender;
+}
